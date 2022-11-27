@@ -1,3 +1,5 @@
+@import "../utils/vars";
+
 .wrapper {
   display: flex;
   align-items: center;
@@ -8,8 +10,19 @@
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 60px 15px;
+}
+
+@media screen and (min-width: #{$tablet}) {
+  .section {
+    padding: 60px 15px;
+  }
+}
+
+@media screen and (min-width: #{$desktop}) {
+  .section {
+    padding: 94px 215px;
+  }
 }
 
 .container {
