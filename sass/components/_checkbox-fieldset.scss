@@ -1,0 +1,51 @@
+.checkbox-fieldset {
+  max-width: 448px;
+  width: 100%;
+  background-size: cover;
+  margin: 0 auto;
+  border: none;
+  padding: 0;
+  margin-bottom: 30px;
+
+  &__link {
+    color: var(--primary-color);
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: var(--quinary-color);
+    justify-content: center;
+  }
+
+  &__input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+
+    &:checked + .checkbox-fieldset__checkmark {
+      border: 0;
+    }
+
+    &:checked + .checkbox-fieldset__checkmark > svg {
+      display: block;
+    }
+  }
+
+  &__checkmark {
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--main-color);
+    border-radius: 2px;
+    display: block;
+    margin-right: 8px;
+
+    & > svg {
+      display: none;
+    }
+  }
+}

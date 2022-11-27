@@ -1,0 +1,20 @@
+.client-icons {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: var(--quinary-color);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  transition-duration: 250ms;
+  transition-property: border, color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid var(--primary-color);
+    --color1: var(--primary-color);
+  }
+}
