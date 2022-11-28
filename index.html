@@ -176,16 +176,32 @@
       </section>
       <section>
         <div class="team section">
-          <h2 class="title-h2">Nasz zespół</h2>
-          <ul class="list-style-none wrapper">
-            <li>
+          <h2 class="title-h2-team">Nasz zespół</h2>
+          <ul class="list-style-none wrapper-team">
+            <li class="team-member">
               <figure class="team__memeber-photo">
-                <img
-                  src="images/img-1.jpg"
-                  alt="Pan w bordowej koszuli"
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="images/img-1-desktop.jpg 1px, images/img-1-desktop@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="images/img-1-tablet.jpg 1px, images/img-1-tablet@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="images/img-1-mobile.jpg 1px, images/img-1-mobile@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <img
+                    src="images/img-1-mobile.jpg"
+                    alt="Pan w bordowej koszuli"
+                  />
+                </picture>
+
                 <figcaption class="team__memeber-details team__card">
                   <span class="team__memeber-details--name">John Doe</span>
                   <span class="team__memeber-details--role"
@@ -216,14 +232,9 @@
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li class="team-member">
               <figure class="team__memeber-photo">
-                <img
-                  src="images/img-2.jpg"
-                  alt="Pani z blond włosami"
-                  width="270"
-                  height="260"
-                />
+                <img src="images/img-2-mobile.jpg" alt="Pani z blond włosami" />
                 <figcaption class="team__memeber-details team__card">
                   <span class="team__memeber-details--name">John Doe</span>
                   <span class="team__memeber-details--role"
@@ -254,14 +265,9 @@
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li class="team-member">
               <figure class="team__memeber-photo">
-                <img
-                  src="images/img-3.jpg"
-                  alt="Pan w białej koszuli"
-                  width="270"
-                  height="260"
-                />
+                <img src="images/img-3-mobile.jpg" alt="Pan w białej koszuli" />
                 <figcaption class="team__memeber-details team__card">
                   <span class="team__memeber-details--name">John Doe</span
                   ><span class="team__memeber-details--role">Marketing</span>
@@ -290,13 +296,11 @@
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li class="team-member">
               <figure class="team__memeber-photo">
                 <img
-                  src="images/img-4.jpg"
+                  src="images/img-4-mobile.jpg"
                   alt="Pan w czarnej koszuli"
-                  width="270"
-                  height="260"
                 />
                 <figcaption class="team__memeber-details team__card">
                   <span class="team__memeber-details--name">John Doe</span>

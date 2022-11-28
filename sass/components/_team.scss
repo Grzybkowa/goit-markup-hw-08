@@ -1,17 +1,33 @@
+@import "../utils/vars";
+
+.wrapper-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+}
+
+.team-member {
+  width: 100%;
+}
+
 .team {
   width: 100%;
-  gap: 50px;
+  // gap: 30px;
   background-color: var(--quaternary-color);
 
   &__card {
     padding: 30px;
+    width: 100%;
   }
 
   &__memeber-photo {
-    max-width: 270px;
     width: 100%;
     justify-content: center;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     background: var(--secondary-color);
     box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024,
       0px 1px 3px 0px #0000001f;
@@ -21,6 +37,7 @@
     transition-duration: 250ms;
     transition-property: box-shadow;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    margin-bottom: 30px;
   }
 
   &__memeber-details {
@@ -40,6 +57,47 @@
 
     &--name {
       margin-bottom: 10px;
+    }
+  }
+}
+
+.title-h2-team {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--main-color);
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: #{$tablet}) {
+  .wrapper-team {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: #{$desktop}) {
+  .wrapper-team {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 94px;
+  }
+
+  .title-h2-team {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
+
+  .team {
+    gap: 50px;
+
+    &__memeber-photo {
+      max-width: 270px;
+      display: inline-block;
     }
   }
 }
