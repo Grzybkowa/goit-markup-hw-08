@@ -64,16 +64,6 @@
   }
 }
 
-.title-h2-team {
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: var(--main-color);
-  margin-bottom: 30px;
-}
-
 @media screen and (min-width: #{$tablet}) {
   .team-member {
     width: 100%;
@@ -100,15 +90,9 @@
 
   .wrapper-team {
     display: flex;
+    justify-content: center;
     flex-direction: row;
-    margin-bottom: 94px;
     max-width: 1170px;
-  }
-
-  .title-h2-team {
-    font-size: 36px;
-    line-height: 1.16;
-    margin-bottom: 50px;
   }
 
   .team {

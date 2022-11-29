@@ -21,7 +21,8 @@
 
 @media screen and (min-width: #{$desktop}) {
   .section {
-    padding: 94px 215px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -72,13 +73,24 @@
 }
 
 .title-h2 {
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--main-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: #{$tablet}) {
+}
+
+@media screen and (min-width: #{$desktop}) {
+  .title-h2 {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
 }
 
 .title-h3 {
