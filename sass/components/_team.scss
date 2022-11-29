@@ -6,11 +6,13 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  max-width: 450px;
   margin: auto;
 }
 
 .team-member {
   width: 100%;
+  max-width: 450px;
 }
 
 .team {
@@ -24,6 +26,7 @@
   }
 
   &__memeber-photo {
+    max-width: 450px;
     width: 100%;
     justify-content: center;
     display: flex;
@@ -72,18 +75,34 @@
 }
 
 @media screen and (min-width: #{$tablet}) {
+  .team-member {
+    width: 100%;
+    max-width: 354px;
+  }
+
   .wrapper-team {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+    max-width: 738px;
+  }
+
+  .team__member-photo {
+    max-width: 354px;
   }
 }
 
 @media screen and (min-width: #{$desktop}) {
+  .team-member {
+    width: 100%;
+    max-width: 270px;
+  }
+
   .wrapper-team {
     display: flex;
     flex-direction: row;
     margin-bottom: 94px;
+    max-width: 1170px;
   }
 
   .title-h2-team {
