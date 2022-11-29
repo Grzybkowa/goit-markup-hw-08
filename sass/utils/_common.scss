@@ -13,19 +13,6 @@
   padding: 60px 15px;
 }
 
-@media screen and (min-width: #{$tablet}) {
-  .section {
-    padding: 60px 15px;
-  }
-}
-
-@media screen and (min-width: #{$desktop}) {
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
-
 .container {
   max-width: 1200px;
   margin-left: auto;
@@ -82,24 +69,40 @@
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: #{$tablet}) {
-}
-
-@media screen and (min-width: #{$desktop}) {
-  .title-h2 {
-    font-size: 36px;
-    line-height: 1.16;
-    margin-bottom: 50px;
-  }
-}
-
 .title-h3 {
-  color: var(--secondary-color);
-  margin-bottom: 20px;
+  font-size: 14px;
   font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .display-flex {
   display: flex;
   gap: 10px;
+}
+
+@media screen and (min-width: #{$tablet}) {
+  .section {
+    padding: 60px 15px;
+  }
+}
+
+@media screen and (min-width: #{$desktop}) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .title-h2 {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
+
+  .title-h3 {
+    text-align: start;
+  }
 }
