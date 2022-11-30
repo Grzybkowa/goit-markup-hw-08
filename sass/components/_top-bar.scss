@@ -1,3 +1,5 @@
+@import "../utils/vars";
+
 .top-bar {
   width: 100%;
   background: var(--secondary-color);
@@ -39,4 +41,24 @@
   &__navigation-wrapper {
     display: none;
   }
+
+  &__hamburger {
+    background-color: var(--secondary-color);
+    border: none;
+    cursor: pointer;
+
+    &:hover,
+    :active {
+      fill: var(--primary-color);
+    }
+  }
+}
+
+@media screen and (min-width: #{$tablet}) {
+  .top-bar__hamburger {
+    display: none;
+  }
+}
+
+@media screen and (min-width: #{$desktop}) {
 }

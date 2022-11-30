@@ -24,7 +24,11 @@
         <a href="index.html" class="logo hover-link"
           ><span class="logo--blue">Web</span>Studio</a
         >
-        <button class="top-bar__hamburger">Hamburger</button>
+        <button class="top-bar__hamburger">
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#icon-menu_hamburger"></use>
+          </svg>
+        </button>
         <div class="top-bar__navigation-wrapper">
           <div class="top-bar__navigation">
             <nav class="navigation">
@@ -73,24 +77,16 @@
           <div class="top-bar__social-media"></div>
         </div>
         <div class="mobile-menu display-none">
-          <button type="button" class="mobile-menu__close-button">x</button>
+          <button type="button" class="mobile-menu__close-button">
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#icon-close_x"></use>
+            </svg>
+          </button>
           <div class="mobile-menu__wrapper">
             <ul class="mobile-menu__navigation-list">
-              <li>
-                <a class="mobile-menu__navigation-links" href="Agencja"
-                  >Agencja</a
-                >
-              </li>
-              <li>
-                <a class="mobile-menu__navigation-links" href="Portfolio"
-                  >Portfolio</a
-                >
-              </li>
-              <li>
-                <a class="mobile-menu__navigation-links" href="Kontakt"
-                  >Kontakt</a
-                >
-              </li>
+              <li class="mobile-menu__navigation-links">Agencja</li>
+              <li class="mobile-menu__navigation-links">Portfolio</li>
+              <li class="mobile-menu__navigation-links">Kontakt</li>
             </ul>
             <div>
               <ul class="mobile-menu__contact-links">
@@ -106,26 +102,13 @@
                 </li>
               </ul>
               <ul class="social-media-block">
-                <li>
-                  <a class="social-media-block__social-links" href="Instagram"
-                    >Instagram</a
-                  >
-                </li>
-                <li>
-                  <a class="social-media-block__social-links" href="Twitter"
-                    >Twitter</a
-                  >
-                </li>
-                <li>
-                  <a class="social-media-block__social-links" href="Facebook"
-                    >Facebook</a
-                  >
-                </li>
-                <li>
-                  <a class="social-media-block__social-links" href="LinkedIn"
-                    >LinkedIn</a
-                  >
-                </li>
+                <li class="social-media-block__social-links">Instagram</li>
+                <div class="vl"></div>
+                <li class="social-media-block__social-links">Twitter</li>
+                <div class="vl"></div>
+                <li class="social-media-block__social-links">Facebook</li>
+                <div class="vl"></div>
+                <li class="social-media-block__social-links">LinkedIn</li>
               </ul>
             </div>
           </div>

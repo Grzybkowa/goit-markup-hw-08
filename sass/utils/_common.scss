@@ -1,11 +1,13 @@
 @import "../utils/vars";
 
 .wrapper {
+  padding-right: 15px;
+  padding-left: 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 1200px;
+  // max-width: 1200px;
   margin: auto;
 }
 

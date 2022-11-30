@@ -1,5 +1,7 @@
+@import "../utils/vars";
+
 .checkbox-fieldset {
-  max-width: 448px;
+  max-width: 450px;
   width: 100%;
   background-size: cover;
   margin: 0 auto;
@@ -12,10 +14,11 @@
   }
 
   &__label {
-    display: flex;
     align-items: center;
-    font-size: 14px;
-    line-height: 1.71;
+    display: inline-flex;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-align: left;
     color: var(--quinary-color);
@@ -46,6 +49,20 @@
 
     & > svg {
       display: none;
+    }
+  }
+}
+
+@media screen and (min-width: #{$tablet}) {
+}
+
+@media screen and (min-width: #{$desktop}) {
+  .checkbox-fieldset {
+    max-width: 448px;
+    &__label {
+      display: flex;
+      font-size: 14px;
+      line-height: 1.71;
     }
   }
 }
