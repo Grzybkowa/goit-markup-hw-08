@@ -5,21 +5,23 @@
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   justify-content: center;
+  justify-content: space-around;
   max-width: 450px;
   width: 100%;
   margin: 0 auto;
 }
 
 .client-icons {
-  width: 210px;
+  display: inline-grid;
+  max-width: 100%;
+  max-width: 210px;
+  min-width: 70px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: var(--quinary-color);
-  display: inline-flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
   transition-duration: 250ms;
   transition-property: border, color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -33,9 +35,7 @@
 
 @media screen and (min-width: #{$tablet}) {
   .wrapper-client {
-    width: 100%;
     max-width: 738px;
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
   .client-icons {
@@ -45,7 +45,6 @@
 
 @media screen and (min-width: #{$desktop}) {
   .wrapper-client {
-    width: 100%;
     max-width: 1170px;
     display: flex;
     flex-direction: row;
