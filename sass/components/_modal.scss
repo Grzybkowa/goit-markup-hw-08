@@ -55,7 +55,7 @@
 @media screen and (min-width: #{$desktop}) {
   .modal {
     width: 528px;
-    min-height: 581px;
+    height: 581px;
 
     &__form {
       max-width: 448px;

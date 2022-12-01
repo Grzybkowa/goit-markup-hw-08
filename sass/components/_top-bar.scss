@@ -55,10 +55,29 @@
 }
 
 @media screen and (min-width: #{$tablet}) {
-  .top-bar__hamburger {
-    display: none;
+  .top-bar {
+    &__hamburger {
+      display: none;
+    }
+
+    &__navigation-wrapper {
+      display: flex;
+    }
+
+    &__contact {
+      flex-direction: column;
+      margin-left: 101px;
+      gap: 10px;
+    }
   }
 }
 
 @media screen and (min-width: #{$desktop}) {
+  .top-bar {
+    &__contact {
+      flex-direction: row;
+      gap: 30px;
+      margin-left: 0;
+    }
+  }
 }
