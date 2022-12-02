@@ -118,6 +118,8 @@
 }
 
 .social-media-block {
+  flex-wrap: wrap;
+  gap: 3px;
   list-style: none;
   max-width: 100%;
   display: inline-flex;
@@ -150,8 +152,9 @@
   margin-right: 10px;
 }
 
-// @media screen and (min-width: #{$tablet}) {
-// }
-
-// @media screen and (min-width: #{$desktop}) {
-// }
+@media screen and (min-width: #{$tablet}) {
+  .social-media-block {
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+}

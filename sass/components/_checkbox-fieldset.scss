@@ -14,6 +14,7 @@
   }
 
   &__label {
+    flex-wrap: wrap;
     align-items: center;
     display: inline-flex;
     font-size: 12px;
@@ -53,11 +54,11 @@
   }
 }
 
-
 @media screen and (min-width: #{$desktop}) {
   .checkbox-fieldset {
     max-width: 448px;
     &__label {
+      flex-wrap: nowrap;
       display: flex;
       font-size: 14px;
       line-height: 1.71;
