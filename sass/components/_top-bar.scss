@@ -3,7 +3,9 @@
 .top-bar {
   width: 100%;
   background: var(--secondary-color);
-  padding: 24px 0px;
+
+  padding-top: 16px;
+  padding-bottom: 16px;
   display: flex;
   justify-content: center;
   border: 1px solid #ececec;
@@ -15,7 +17,6 @@
   &__navigation {
     display: flex;
     justify-content: space-between;
-    // justify-content: flex-start;
     gap: 93px;
     align-items: center;
   }
@@ -67,7 +68,6 @@
 
     &__contact {
       flex-direction: column;
-      margin-left: 101px;
       gap: 10px;
     }
     &__navigation {
@@ -78,6 +78,8 @@
 
 @media screen and (min-width: #{$desktop}) {
   .top-bar {
+    padding: 24px 0px;
+
     &__contact {
       flex-direction: row;
       gap: 30px;
